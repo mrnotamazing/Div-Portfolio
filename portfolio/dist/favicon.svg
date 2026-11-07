@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- the crystal: an elongated quartz point in the site's light (quartz blue → teal → soft green) -->
+  <defs>
+    <linearGradient id="l" x1="0" y1="0" x2="0.2" y2="1"><stop offset="0" stop-color="#7f9dff"/><stop offset="1" stop-color="#3f6fe6"/></linearGradient>
+    <linearGradient id="r" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#7fe6d6"/><stop offset="0.6" stop-color="#57d6cf"/><stop offset="1" stop-color="#aee68f"/></linearGradient>
+  </defs>
+  <g transform="rotate(18 32 32)" stroke="#0b1020" stroke-opacity="0.35" stroke-width="0.8" stroke-linejoin="round">
+    <path d="M21.5 18.5 L32 21.5 L32 58 L21.5 51.5 Z" fill="url(#l)"/>
+    <path d="M32 21.5 L42.5 18.5 L42.5 51.5 L32 58 Z" fill="url(#r)"/>
+    <path d="M32 4 L21.5 18.5 L32 21.5 Z" fill="#a9bdff"/>
+    <path d="M32 4 L32 21.5 L42.5 18.5 Z" fill="#eafcf6"/>
+    <path d="M32 21.5 L32 58" stroke="#ffffff" stroke-opacity="0.75" stroke-width="1.1" fill="none"/>
+    <path d="M35.5 26 L35.5 45" stroke="#ffffff" stroke-opacity="0.45" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

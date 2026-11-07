@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en" data-theme="night">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Div Mehta — One Thread</title>
+  <meta name="description" content="Div Mehta: BBA (Hons.) student at TAPMI Bengaluru working across sales, marketing, design thinking and venture building." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Div Mehta — One Thread" />
+  <meta property="og:description" content="Sales, marketing, design thinking and venture building: one thread, many projects." />
+  <!-- set to the absolute URL once the site has a domain, e.g. https://yourname.com/og.jpg -->
+  <meta property="og:image" content="/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="/og.jpg" />
+  <meta name="theme-color" content="#07080C" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="/assets/index-DbrYdjjk.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BhO5rWP3.css">
+</head>
+<body class="locked">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <filter id="boil"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="1" /><feDisplacementMap in="SourceGraphic" scale="3.5" /></filter>
+  </svg>
+
+  <canvas id="gl" aria-hidden="true"></canvas>
+  <canvas id="thread" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- 00 · loader: you're looking down into a still pond; a drop falls, rings spread, something glows below -->
+  <div id="loader">
+    <div class="loader-count" aria-live="polite">000</div>
+    <p class="loader-line">Something is under the water.</p>
+    <div class="loader-enter">
+      <button id="enter-sound">[ Reach in ]</button>
+      <button id="enter-quiet">reach in without sound</button>
+    </div>
+  </div>
+
+  <header class="hud">
+    <a class="hud-logo" href="#top" aria-label="Back to top"><span class="knot-mark"></span><span>Div Mehta</span></a>
+    <div class="hud-col hide-sm"><span class="hud-label">Currently:</span><span>BBA (Hons.), TAPMI</span></div>
+    <div class="hud-col hide-sm"><span class="hud-label">Based in:</span><span>Bengaluru (<span id="clock">00:00</span>)</span></div>
+    <nav class="hud-col hide-sm" aria-label="Sections"><span class="hud-label">Navigation:</span><span><a href="#about">About</a>, <a href="#work">Work</a>, <a href="#play">Play</a>, <a href="#contact">Contact</a></span></nav>
+    <button id="sound-toggle" class="hud-sound" aria-pressed="false">Sound <span>off</span></button>
+  </header>
+
+  <div class="theme-pill" role="group" aria-label="Theme">
+    <span class="pill-knob" aria-hidden="true"></span>
+    <button data-theme-set="day">Day</button>
+    <button data-theme-set="night">Night</button>
+  </div>
+
+  <main>
+    <!-- 01 · hero: the crystal rises out of the ripple -->
+    <section id="top" class="s s-hero">
+      <div class="hero-meta ui-label">(00) Hi</div>
+      <p class="hero-intro" data-split>I'm Div, a business student at TAPMI in Bengaluru. This is a short story of what I've worked on so far.</p>
+      <a class="pill-btn hero-cta" href="#intro">Start here <span class="pill-ico">↓</span></a>
+      <h1 class="display hero-name"><span class="line"><span>Div</span></span> <span class="line"><span>Mehta</span></span></h1>
+    </section>
+
+    <!-- 02 · intro: light enters the crystal and splits into beams; where each lands, it ripples -->
+    <section id="intro" class="s s-intro">
+      <div class="wrap">
+        <div class="ui-label" data-reveal>(01) What I like doing</div>
+        <p class="statement" data-split>I like talking to people, working out what they actually need, and helping turn that into something useful. I'm still learning, but these are the things I keep coming back to.</p>
+        <ol class="disciplines" data-reveal>
+          <li><span class="n">(01)</span><span class="t">Sales</span><span class="d">my first deal, in my first internship</span></li>
+          <li><span class="n">(02)</span><span class="t">Marketing</span><span class="d">learning what makes people care</span></li>
+          <li><span class="n">(03)</span><span class="t">Design thinking</span><span class="d">listening before building</span></li>
+          <li><span class="n">(04)</span><span class="t">Graphic design</span><span class="d">where it all started</span></li>
+          <li><span class="n">(05)</span><span class="t">Building things</span><span class="d">two small ideas in progress</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 03 · about: too much light to hold; a crack glows; it cleaves; a thread of light is inside -->
+
+    <section id="about" class="s s-about">
+      <div class="sticky">
+        <div class="about-text">
+          <div class="ui-label" data-reveal>(02) How I got here</div>
+          <h2 class="display about-title" data-split>It started <em>small.</em></h2>
+          <p class="body" data-reveal>I have a habit of turning "what if..." into projects. It started on Fiverr: three years of YouTube thumbnails and logos, plus a channel of my own that passed 80,000 views.</p>
+          <p class="body" data-reveal>In my first sales internship, at a small clothing boutique, I closed a ₹1,00,000 order in week one and kept it as a repeat account. Later I led a 10-person zero-waste stall at our college EcoFest to ₹35,000+ in a day. (I once got my professors to sign a 'legally binding?' promise to buy from our fundraiser stall, too.)</p>
+          <p class="body" data-reveal>Now I'm at TAPMI Bengaluru with a 9.0 GPA, on a 100% tuition scholarship that went to the top 5 of 300+ students. This summer: 25+ interviews and 5 prototypes for a fire-safety NGO. Business led me to psychology, then design, then tech, and my team won the Y.CEO Programme at IIT Madras along the way.</p>
+          <p class="ui-label caption" data-reveal>↓ Here's what came out of it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · work: the light scatters into the sky and becomes a constellation; every star is a project -->
+    <section id="work" class="s s-work" style="--n:4">
+      <div class="sticky">
+        <div class="work-head"><span class="ui-label">(03) Things I've worked on</span><span class="ui-label"><span id="work-i">01</span> / 04</span></div>
+        <div class="work-cards">
+          <article class="work-card is-active" data-specimen="01" data-found="2026" data-property="25+ interviews, 5 prototypes, now live">
+            <p class="specimen-tag"><span class="spec-found">2026</span><span class="spec-prop">25+ interviews, 5 prototypes, now live</span></p>
+            <div class="ui-label">01 — Design thinking · Social impact</div>
+            <h3 class="work-title">FireWatch&shy;Safety</h3>
+            <dl><dt>Role</dt><dd>Design Thinking Intern, Beyond Carlton</dd><dt>Year</dt><dd>2026</dd><dt>Impact</dt><dd>25+ resident interviews and 5 prototypes, led end to end. The hazard-reporting platform is now live and piloting in Bengaluru, and the NGO adopted the reframed donor pitch.</dd></dl>
+            <a class="link" href="https://www.linkedin.com/in/div-mehta-matternet" target="_blank" rel="noopener">More on LinkedIn →</a>
+          </article>
+          <article class="work-card" data-specimen="02" data-found="2025" data-property="300+ sustainable materials, one repository">
+            <p class="specimen-tag"><span class="spec-found">2025</span><span class="spec-prop">300+ sustainable materials, one repository</span></p>
+            <div class="ui-label">02 — Venture · Sustainability</div>
+            <h3 class="work-title">MatterNet</h3>
+            <dl><dt>Role</dt><dd>Founder</dd><dt>Year</dt><dd>2025 – now</dd><dt>Impact</dt><dd>An AI-powered global repository connecting sustainable-material innovators (students, startups, labs) with brands. Go-to-market pitch built around an initial 300+ solutions.</dd></dl>
+            <a class="link" href="https://www.linkedin.com/in/div-mehta-matternet" target="_blank" rel="noopener">More on LinkedIn →</a>
+          </article>
+          <article class="work-card" data-specimen="03" data-found="2022" data-property="₹1,00,000 in week one">
+            <p class="specimen-tag"><span class="spec-found">2022</span><span class="spec-prop">₹1,00,000 in week one</span></p>
+            <div class="ui-label">03 — Sales · Digital marketing</div>
+            <h3 class="work-title">Reva Clothing</h3>
+            <dl><dt>Role</dt><dd>Digital Marketing &amp; Sales Intern</dd><dt>Year</dt><dd>2022</dd><dt>Impact</dt><dd>Closed a ₹1,00,000 deal in my first week and turned it into a recurring account. Launched the brand's first website and ran its social handles.</dd></dl>
+            <a class="link" href="https://www.linkedin.com/in/div-mehta-matternet" target="_blank" rel="noopener">More on LinkedIn →</a>
+          </article>
+          <article class="work-card" data-specimen="04" data-found="2026" data-property="₹35,000+ in a day, carbon-negative">
+            <p class="specimen-tag"><span class="spec-found">2026</span><span class="spec-prop">₹35,000+ in a day, carbon-negative</span></p>
+            <div class="ui-label">04 — Leadership · Sustainability</div>
+            <h3 class="work-title">Pulp Culture</h3>
+            <dl><dt>Role</dt><dd>Stall Lead, TAPMI EcoFest × Eat Raja</dd><dt>Year</dt><dd>2026</dd><dt>Impact</dt><dd>A zero-waste, no-plastic stall: ₹35,000+ in sales in one day with a net carbon-negative footprint, leading a team of 10 across sourcing, accounts and logistics.</dd></dl>
+            <a class="link" href="https://www.linkedin.com/in/div-mehta-matternet" target="_blank" rel="noopener">More on LinkedIn →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 · playground: the constellation loosens into sparks; the doodles play with them -->
+    <section id="play" class="s s-play">
+      <div class="sticky">
+        <div class="ui-label play-label">(04) Still figuring out</div>
+        <p class="play-cap now-line"><span class="now-lead" data-default="I am currently">I am currently</span>
+          <span class="rotor" aria-live="polite"><span class="rotor-item is-on">building a global library of sustainable materials</span><span class="rotor-item">killing mess queues and wait times</span><span class="rotor-item">digitising SOPs and handing servers their next 3 moves</span><span class="rotor-item">making every donation SMARTER</span><span class="rotor-item">studying on a 100% tuition scholarship</span><span class="rotor-item" data-lead="Most importantly, I am">BUILDING. FIXING. LEARNING.</span></span></p>
+        <div class="doodles" id="doodles"></div>
+      </div>
+    </section>
+
+    <!-- 06 · contact: the sparks gather into the thread, the crystal closes around one end, the other end reaches you; the knot is the seal -->
+    <section id="contact" class="s s-contact">
+      <div class="contact-inner" data-reveal>
+        <div class="ui-label">(05) Say hello</div>
+        <h2 class="display contact-title">Let's <em>talk.</em></h2>
+        <p class="contact-line">I'm looking for internships in sales, marketing and business development, and I'd love to hear from you.</p>
+        <a class="email" href="mailto:itsthedivmehta6707@gmail.com">itsthedivmehta6707@gmail.com</a>
+        <div class="contact-links"><a href="https://www.linkedin.com/in/div-mehta-matternet" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+        <a class="pill-btn cv-btn" href="/Div-Mehta-CV.pdf" download="Div-Mehta-CV.pdf">Download my CV <span class="pill-ico">↓</span></a>
+      </div>
+      <footer class="foot">
+        <span class="ui-label">© 2026 Div Mehta</span>
+        <span class="foot-mid"><span class="ui-label foot-line hide-sm">Thanks for scrolling.</span></span>
+        <!-- once the story ends, "Begin again" takes the corner where "Back to top" was: away from every line of text -->
+        <span class="foot-end">
+          <a class="ui-label foot-top" href="#top">Back to top ↑</a>
+          <button id="again" class="again">↺ Begin again</button>
+        </span>
+      </footer>
+    </section>
+  </main>
+
+</body>
+</html>
